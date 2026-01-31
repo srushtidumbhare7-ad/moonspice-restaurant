@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Moonspice Restaurant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Moonspice</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="booking.html" class="nav-link">Book Table</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+
+                <!-- 🛒 CART ICON (ADDED HERE) -->
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        🛒 <span id="cartCount">0</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you</p>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6"
+                                placeholder="Feedback, catering enquiry, bulk booking, etc." required></textarea>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <div id="formResponse"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Reach Moonspice</h2>
+
+                    <div class="info-block">
+                        <h3>📍 Location</h3>
+                        <p>
+                            Moonspice Restaurant<br>
+                            MG Road, Camp Area<br>
+                            Pune, Maharashtra – 411001
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>📞 Phone</h3>
+                        <p>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>📧 Email</h3>
+                        <p>
+                            <a href="mailto:contact@moonspice.in">
+                                contact@moonspice.in
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>🕒 Opening Hours</h3>
+                        <p>
+                            Monday – Thursday: 11:00 AM – 10:30 PM<br>
+                            Friday – Sunday: 11:00 AM – 11:30 PM
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Follow Us</h3>
+                        <div class="social-links-large">
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us on Map</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=MG+Road+Pune&output=embed" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Moonspice Restaurant</h4>
+                <p>Authentic Indian Cuisine with a Modern Touch</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>
+                    Mon–Thu: 11:00 AM – 10:30 PM<br>
+                    Fri–Sun: 11:00 AM – 11:30 PM
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>
+                    Phone: +91 98765 43210<br>
+                    Email: contact@moonspice.in
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">📷</a>
+                    <a href="#">𝕏</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Moonspice Restaurant. All rights reserved.</p>
+            <button class="scroll-to-top" id="scrollToTop">↑</button>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
