@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Moonspice Restaurant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Moonspice</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="booking.html" class="nav-link active">Book Table</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        🛒 <span id="cartCount">0</span>
+                    </a>
+                </li>
+
+                <button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Book a Table</h1>
+            <p>Reserve your perfect dining experience</p>
+
+        </div>
+    </section>
+
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-content">
+
+                <!-- Booking Form -->
+                <div class="booking-form-wrapper">
+                    <h2>Table Reservation</h2>
+
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Mobile Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                                <span class="error-msg"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                                <span class="error-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <input type="number" id="guests" name="guests" min="1" max="20" required>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" name="requests" rows="4"
+                                placeholder="Birthday, anniversary, Jain food, no onion/garlic, etc."></textarea>
+                        </div>
+
+                        <div class="availability-status" id="availabilityStatus"></div>
+
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            Confirm Reservation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Booking Info -->
+                <div class="booking-info">
+                    <h3>Why Dine at Moonspice?</h3>
+                    <ul>
+                        <li>✓ Authentic North & South Indian flavours</li>
+                        <li>✓ Perfect for family dinners & celebrations</li>
+                        <li>✓ Birthday & anniversary arrangements</li>
+                        <li>✓ Jain & custom dietary options</li>
+                        <li>✓ Warm Indian hospitality</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem;">Restaurant Details</h3>
+                    <p>
+                        <strong>Address:</strong><br>
+                        Moonspice Restaurant,<br>
+                        MG Road, Pune, Maharashtra – 411001
+                    </p>
+                    <p>
+                        <strong>Phone:</strong><br>
+                        +91 98765 43210
+                    </p>
+                    <p>
+                        <strong>Timings:</strong><br>
+                        Mon–Thu: 11:00 AM – 10:30 PM<br>
+                        Fri–Sun: 11:00 AM – 11:30 PM
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reservation Confirmed 🎉</h2>
+
+            <div class="confirmation-details">
+                <p><strong>Name:</strong> <span id="confirmName"></span></p>
+                <p><strong>Email:</strong> <span id="confirmEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="confirmPhone"></span></p>
+                <p><strong>Date & Time:</strong> <span id="confirmDateTime"></span></p>
+                <p><strong>Guests:</strong> <span id="confirmGuests"></span></p>
+                <p><strong>Booking ID:</strong> <span id="confirmNumber"></span></p>
+            </div>
+
+            <p class="confirmation-message">
+                Thank you for choosing Moonspice. We look forward to serving you!
+            </p>
+
+            <button class="btn btn-primary" onclick="location.href='index.html'">
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Moonspice Restaurant</h4>
+                <p>Authentic Indian Cuisine with a Modern Touch</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>
+                    Mon–Thu: 11:00 AM – 10:30 PM<br>
+                    Fri–Sun: 11:00 AM – 11:30 PM
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>
+                    Phone: +91 98765 43210<br>
+                    Email: contact@moonspice.in
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">f</a>
+                    <a href="#">📷</a>
+                    <a href="#">𝕏</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Moonspice Restaurant. All rights reserved.</p>
+            <button class="scroll-to-top" id="scrollToTop">↑</button>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/booking.js"></script>
+</body>
+
+</html>
