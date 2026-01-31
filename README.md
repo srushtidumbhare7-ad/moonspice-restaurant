@@ -4,6 +4,12 @@ Moonspice is a modern, responsive restaurant website built using **HTML, CSS, an
 It provides a complete user experience including menu browsing, cart management, table booking, and theme switching.
 
 ---
+## 🌐 Live Demo
+
+🚀 View the live website here:  
+👉 **https://srushtidumbhare7-ad.github.io/moonspice-restaurant/**
+
+---
 
 ## 🌟 Features
 
