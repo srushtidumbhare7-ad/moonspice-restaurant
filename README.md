@@ -84,13 +84,13 @@ Moonspice/
 ## 🖼️ Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](assets/screenshots/home.png)
 
 ### Menu Page
-![Menu Page](screenshots/menu.png)
+![Menu Page](assets/screenshots/menu.png)
 
 ### Cart Page
-![Cart Page](screenshots/cart.png)
+![Cart Page](assets/screenshots/cart.png)
 
 ### Booking Page
-![Booking Page](screenshots/booking.png)
+![Booking Page](assets/screenshots/booking.png)
