@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Moonspice Restaurant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Moonspice</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="booking.html" class="nav-link">Book Table</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        🛒 <span id="cartCount">0</span>
+                    </a>
+                </li>
+
+                <li><button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button></li>
+
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Explore our culinary creations</p>
+        </div>
+    </section>
+
+
+    <!-- Menu Filters -->
+    <section class="menu-filters">
+        <div class="container">
+            <h2>Filter by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="veg">Vegetarian</button>
+                <button class="filter-btn" data-filter="non-veg">Non-Vegetarian</button>
+                <button class="filter-btn" data-filter="popular">Popular</button>
+                <button class="filter-btn" data-filter="special">Chef's Special</button>
+                <button class="filter-btn" data-filter="favorites">❤️ Favorites</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+    <div class="container">
+        <h2 class="section-title">Recently Viewed</h2>
+        <div class="menu-grid" id="recentGrid"></div>
+    </div>
+</section>
+
+    <!-- Starters Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Starters</h2>
+            <div class="menu-grid" id="startersGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Course Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Main Course</h2>
+            <div class="menu-grid" id="mainsGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Desserts</h2>
+            <div class="menu-grid" id="dessertsGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Beverages</h2>
+            <div class="menu-grid" id="beveragesGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Moonspice Restaurant</h4>
+                <p>123 MG Road,Pune, Maharashtra – 411001</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Thu: 11am - 10pm<br>Fri-Sat: 11am - 11pm<br>Sunday: 12pm - 9pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: 98765 43210<br>Email: info@moonspice.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Moonspice Restaurant. All rights reserved.</p>
+            <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">↑</button>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>
