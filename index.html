@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonspice - Premium Restaurant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+
+            <div class="nav-logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Moonspice</span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="booking.html" class="nav-link">Book Table</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+                <li>
+                    <a href="cart.html" class="cart-icon">
+                        🛒 <span id="cartCount">0</span>
+                    </a>
+                </li>
+
+                <li>
+                    <button id="themeToggle" class="theme-toggle">🌙</button>
+                </li>
+            </ul>
+
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Moonspice</h1>
+                <p class="hero-subtitle">Experience culinary excellence in an elegant setting</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">View Menu</a>
+                    <a href="booking.html" class="btn btn-secondary">Book Table</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Dishes Section -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Dishes</h2>
+            <div class="featured-grid">
+
+                <div class="featured-card">
+                    <img src="assets/images/menu/paneer-pakora.jpg" alt="Paneer Pakora" class="featured-image">
+                    <h3>Paneer Pakora</h3>
+                    <p>Crispy gram flour coated paneer fritters</p>
+                    <span class="price">₹180</span>
+                </div>
+
+                <div class="featured-card">
+                    <img src="assets/images/menu/chicken-biryani.jpg" alt="Chicken Biryani" class="featured-image">
+                    <h3>Chicken Biryani</h3>
+                    <p>Aromatic basmati rice cooked with spiced chicken</p>
+                    <span class="price">₹320</span>
+                </div>
+
+                <div class="featured-card">
+                    <img src="assets/images/menu/cold-coffee.jpg" alt="Cold Coffee" class="featured-image">
+                    <h3>Cold Coffee</h3>
+                    <p>Chilled coffee with milk and ice</p>
+                    <span class="price">₹120</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Chef's Special -->
+    <section class="chefs-special" id="chefsSpecial">
+        <div class="container">
+            <div class="chefs-content">
+
+                <div class="chefs-text">
+                    <h2>Chef’s Special</h2>
+                    <p class="chefs-title">Butter Chicken with Naan</p>
+                    <p>
+                        Tender chicken cooked in rich tomato-butter gravy, slow simmered
+                        with aromatic Indian spices and served with soft, buttery naan.
+                    </p>
+
+                    <div class="chefs-details">
+                        <span class="price">₹320</span>
+                        <span class="badge">Best Seller</span>
+                    </div>
+                </div>
+
+                <div class="chefs-image">
+                    <img src="assets/images/menu/butter-chicken-naan.jpg" alt="Butter Chicken with Naan">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Recent Bookings -->
+    <section class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Your Recent Bookings</h2>
+
+            <div id="recentBookings"></div>
+
+            <!-- SEE ALL BOOKINGS BUTTON -->
+            <div style="text-align:center; margin-top:20px;">
+                <a href="booking-history.html" class="btn btn-secondary">
+                    See All Bookings
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"An exceptional dining experience. The service was impeccable and the food was absolutely
+                            delicious!"</p>
+                        <p class="testimonial-author">- Sharda</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The ambiance is perfect for a romantic dinner. Every dish was a work of art. Highly
+                            recommended!"</p>
+                        <p class="testimonial-author">- Manoj Kumar</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best restaurant in town! The chef really knows how to bring out flavors. Worth every penny."
+                        </p>
+                        <p class="testimonial-author">- Shanaya Subnis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers & Events -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card offer-happy-hour">
+                    <h3>Happy Hour</h3>
+                    <p>50% off on selected drinks</p>
+                    <p class="offer-time">4 PM - 6 PM Daily</p>
+                </div>
+                <div class="offer-card offer-festival">
+                    <h3>Festival Special</h3>
+                    <p>Complimentary dessert with dinner</p>
+                    <p class="countdown" id="countdown"></p>
+                </div>
+                <div class="offer-card offer-live-music">
+                    <h3>Live Music Night</h3>
+                    <p>Jazz performances every Friday</p>
+                    <p class="offer-time">7 PM - 10 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Moonspice Restaurant</h4>
+                <p>123 MG Road,Pune, Maharashtra – 411001</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Thu: 11am - 10pm<br>Fri-Sat: 11am - 11pm<br>Sunday: 12pm - 9pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: 98765 43210<br>Email: info@moonspice.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Moonspice Restaurant. All rights reserved.</p>
+            <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">↑</button>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
