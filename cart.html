@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart - Moonspice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <span class="logo-icon">🍽️</span>
+            <span class="logo-text">Moonspice</span>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="booking.html" class="nav-link">Book Table</a></li>
+            <li><a href="cart.html" class="nav-link active">Cart</a></li>
+        </ul>
+
+        <a href="cart.html" class="cart-icon">
+            🛒 <span id="cartCount">0</span>
+        </a>
+
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+    </div>
+</nav>
+
+<!-- CART PAGE -->
+<section class="page-hero">
+    <div class="container">
+        <h1>Your Cart</h1>
+        <p>Review your selected items</p>
+    </div>
+</section>
+
+<section class="cart-page container">
+
+    <!-- CART ITEMS -->
+    <div id="cartItems"></div>
+
+    <!-- TOTAL -->
+    <div class="cart-summary">
+        <h3 id="cartTotal"></h3>
+    </div>
+
+    <!-- COUPON -->
+    <div class="coupon-box">
+        <input type="text" id="couponCode" placeholder="Enter coupon code">
+        <button onclick="applyCoupon()">Apply</button>
+        <p id="discountText"></p>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="cart-actions">
+        <button class="btn btn-secondary" onclick="clearCart()">Clear Cart</button>
+        <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+    </div>
+
+</section>
+
+<!-- SCRIPTS (ORDER MATTERS) -->
+<script src="assets/js/script.js"></script>
+<script src="assets/js/cart.js"></script>
+
+</body>
+</html>
